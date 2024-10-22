@@ -1,0 +1,15 @@
+---
+// src/components/SeriesCard.astro
+
+import { Series } from '../types/types';
+
+const { series }: { series: Series } = Astro.props;
+
+---
+
+<div class="series-card">
+  <h3>{series.name}</h3>
+  <p>{series.description}</p>
+  <span>Rating: {series.rating}</span>
+  <button>Ver Detalles</button>
+</div>
